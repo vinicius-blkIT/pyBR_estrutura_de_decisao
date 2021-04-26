@@ -1,18 +1,6 @@
-#definindo funções
-def banner():
-    print("###################################################")
-    print("         informa a estrutura de um número")
-    print("###################################################")
-    return
+from cria_banner import banner
 
-def divisor():
-    print("---------------------------------------------------")
-    return
-
-def instrucoes():
-    print("insira um número inteiro menor que 1000")
-    print("para o programa verificar a estrutura")
-    return
+nome_programa = "verificador da estrutura de um número v1.0"
 
 def verifica_unidade(dezenas):
     unidades = numero_a_analisar - ((centenas*100) + (dezenas*10))
@@ -78,10 +66,5 @@ def verifica_estrutura():
     return
 
 #estrutura do programa
-banner()
-divisor()
-instrucoes()
-divisor()
+banner(nome_programa)
 verifica_estrutura()
-divisor()
-print("FIM DO PROGRAMA")

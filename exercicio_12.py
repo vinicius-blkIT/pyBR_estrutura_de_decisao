@@ -1,13 +1,6 @@
-#definindo funções
-def banner():
-    print("####################################################")
-    print("            calcula salario liquido")
-    print("####################################################")
-    return
+from cria_banner import banner
 
-def divisor():
-    print("----------------------------------------------------")
-    return
+nome_programa = "calculadora de folha de pagamento v1.0"
 
 def calcula_salario_bruto():
     global salario_bruto
@@ -54,23 +47,16 @@ def mostra_info_usuario():
     print("o salário líquido é R${:.2f}".format(salario_liquido))
     return
 
-banner()
-divisor()
+banner(nome_programa)
 
 #declarando variaveis
 horas_trabalhadas = float(input("insira a quantidade de horas trabalhadas: "))
 valor_por_hora = float(input("insira o valor das horas trabalhadas: "))
 
-divisor()
-
 calcula_salario_bruto()
 verifica_faixa_ir()
 calcula_salario_liquido()
 mostra_info_usuario()
-
-divisor()
-
-print("fim do programa")
 
 
 

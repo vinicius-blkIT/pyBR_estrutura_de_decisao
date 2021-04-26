@@ -1,13 +1,6 @@
-#definindo funções
-def banner():
-    print("###################################################")
-    print("             aprovado ou reprovado?")
-    print("###################################################")
-    return
+from cria_banner import banner
 
-def divisor():
-    print("---------------------------------------------------")
-    return
+nome_programa = "verifica aprovação de alunos v1.0"
 
 def calcula_media():
     global media
@@ -27,20 +20,13 @@ def verificacao(x):
         return 
 
 #banner do programa
-banner()
-
-#divisor para separar os módulos
-divisor()
+banner(nome_programa)
 
 #loop para garantir que so sera analisado um caracter
 nota1 = float(input("insira a primeira nota: "))
 nota2 = float(input("insira a segunda nota: "))
 
 
-#divisor para separar os módulos
-divisor()
-
 # verificação
 calcula_media()
 verificacao(media)
-divisor()

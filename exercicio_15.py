@@ -1,13 +1,6 @@
-#definindo funções
-def banner():
-    print("########################################################")
-    print("                     triangulos")
-    print("########################################################")
-    return
+from cria_banner import banner
 
-def divisor():
-    print("--------------------------------------------------------")
-    return
+nome_programa = "verificador de triângulos v1.0"
 
 def verifica_triangulo():
     while True:
@@ -42,11 +35,7 @@ def tipifica_triangulo(lado1, lado2,lado3):
 
 
 #banner do programa
-banner()
-
-#divisor para separar os módulos
-divisor()
+banner(nome_programa)
 
 # verificação
 verifica_triangulo()
-divisor()

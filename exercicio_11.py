@@ -1,13 +1,6 @@
-#definindo funções
-def banner():
-    print("####################################################")
-    print("     calcula aumento baseado no salario atual")
-    print("####################################################")
-    return
+from cria_banner import banner
 
-def divisor():
-    print("---------------------------------------------------")
-    return
+nome_programa = "calculadora de aumento salarial v1.0"
 
 def verifica_aumento(salario_atual):
     global percentual_aumento
@@ -35,11 +28,7 @@ def calcula_aumento(salario, aumento):
     print("o novo valor de salario e R${:.2f}".format((salario*aumento)+salario))
     return
 
-divisor()
-banner()
-divisor()
+banner(nome_programa)
 salario_atual = float(input("insira o valor do salario atual: "))
-divisor()
 verifica_aumento(salario_atual)
 calcula_aumento(salario_atual, percentual_aumento)
-divisor()

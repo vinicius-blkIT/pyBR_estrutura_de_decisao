@@ -1,13 +1,6 @@
-#definindo funções
-def banner():
-    print("###################################################")
-    print("     compara dois números e mostra o maior")
-    print("###################################################")
-    return
+from cria_banner import banner
 
-def divisor():
-    print("---------------------------------------------------")
-    return
+nome_programa = "comparador de dois números v1.0"
 
 def verificacao(x,y):
     if x > y:
@@ -21,19 +14,10 @@ def verificacao(x,y):
         return 
 
 #banner do programa
-banner()
+banner(nome_programa)
 
-#divisor para separar os módulos
-divisor()
-
-# declaração de variáveis
 numero_1 = float(input("insira um número para realizar o teste: "))
-divisor()
 numero_2 = float(input("insira outro número: "))
-
-#divisor para separar os módulos
-divisor()
 
 # verificação
 verificacao(numero_1, numero_2)
-divisor()

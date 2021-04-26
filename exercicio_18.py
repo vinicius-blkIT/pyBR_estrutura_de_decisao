@@ -1,13 +1,6 @@
-#definindo funções
-def banner():
-    print("###################################################")
-    print("          verifica se uma data é válida")
-    print("###################################################")
-    return
+from cria_banner import banner
 
-def divisor():
-    print("---------------------------------------------------")
-    return
+nome_programa = "validador de datas v1.0"
 
 def verifica_dia():
     global dia
@@ -66,11 +59,9 @@ def verifica_ano():
     return
 
 #banner do programa
-banner()
+banner(nome_programa)
 
 #início do programa
-divisor()
 meses_com_31_dias = [1,3,5,7,8,10,12]
 meses_com_30_dias = [4,6,9,11]
 verifica_ano()
-divisor()

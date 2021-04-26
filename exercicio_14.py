@@ -1,21 +1,7 @@
 #definindo funções
-def banner():
-    print("###################################################")
-    print("   calcula a media para aprovação dos alunos")
-    print("###################################################")
-    return
+from cria_banner import banner
 
-def instrucoes():
-    print("###################################################")
-    print(" insira as notas de 2 semestres para obter a média")
-    print(" baseado na média será exibido o conceito")
-    print(" que irá definir a aprovação ou não do aluno")
-    print("###################################################")
-    return
-
-def divisor():
-    print("---------------------------------------------------")
-    return
+nome_programa = "verifica nota e conceito v1.0"
 
 def imprime_medias(media_1, media_2, media_semestre, conceito):
     print("A nota do seu primeiro bimestre foi {:.1f} e a do segundo foi {:.1f}".format(media_1, media_2))
@@ -27,9 +13,6 @@ def imprime_medias(media_1, media_2, media_semestre, conceito):
     else:
         print("Média Inválida")
     return
-
-def fim_do_programa():
-    print("FIM DO PROGRAMA")
 
 def inserir_medias():
     global media_1
@@ -77,19 +60,10 @@ def verificacao():
     return
     
 #banner do programa
-banner()
-
-#divisor para separar os módulos
-divisor()
+banner(nome_programa)
 
 # início do programa
-instrucoes()
 conceitos = ["A","B","C","D","E"]
-
-#divisor para separar os módulos
-divisor()
 
 # verificação
 verificacao()
-divisor()
-fim_do_programa()
